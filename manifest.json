@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Select text to summarize or simplify for students.",
   "permissions": ["contextMenus", "storage", "activeTab", "scripting"],
-  "host_permissions": ["https://your-api-domain.com/*"],
+  "host_permissions": ["https://omnistudy.vercel.app"],
   "background": {
     "service_worker": "background.js"
   },

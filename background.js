@@ -18,7 +18,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
 
   const { gradeLevel = "6", simplicity = "Medium" } = await chrome.storage.sync.get(["gradeLevel", "simplicity"]);
 
-  const response = await fetch(`https://your-api-domain.com/summarize`, {
+  const response = await fetch(`https://omnistudy.vercel.app`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
